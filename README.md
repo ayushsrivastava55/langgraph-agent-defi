@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DeFi AI Assistant
 
-## Getting Started
+An intelligent DeFi assistant built with LangChain and Next.js that provides information about:
+- Cryptocurrency prices
+- Gas fees across networks
+- Liquidity pool analysis
+- Yield farming opportunities
 
-First, run the development server:
+## Features
+- Real-time DeFi data analysis
+- Multi-tool integration
+- Intelligent response generation
+- Comprehensive error handling
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Setup
+1. Clone the repository
+2. Install dependencies
+3. Create a .env file with your API keys
+4. Run the development server with `npm run dev`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## API Endpoints
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### POST /api/graph
+Make DeFi-related queries
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Example request:
+{
+"query": "What is the current price of ETH?"
+}
+validation
